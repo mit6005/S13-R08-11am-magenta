@@ -22,5 +22,6 @@ public interface Music {
     public static interface Visitor<T> {
         T on(Rest m);
         T on(Note m);
+        T on(Concat m);
     }
 }
